@@ -1,4 +1,3 @@
-// app/_context/LanguageContext.tsx
 "use client";
 
 import ar from "@/app/_locales/ar";
@@ -64,13 +63,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <LanguageContext.Provider value={value}>
-      <main
-        className={`${
-          currentLocale === "ar" ? "rtl font-cairo" : "font-inter"
-        } `}
+      <div
+        className={`${currentLocale === "ar" ? "font-cairo" : "font-inter"} `}
       >
         {children}
-      </main>
+      </div>
     </LanguageContext.Provider>
   );
 }

@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Portfolio Website
 
-## Getting Started
+A sleek and dynamic personal portfolio website built with cutting-edge technologies. Showcase your projects, share your story, and connect with visitors through a modern, bilingual interface.
 
-First, run the development server:
+![Portfolio Demo](public/demo.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Key Features
+
+- **Modern Design** - Elegant UI/UX powered by Tailwind CSS and Shadcn/UI components
+- **Dark/Light Themes** - Seamless theme switching for optimal viewing experience
+- **Bilingual Support** - Full English and Arabic language support
+- **Responsive Layout** - Perfect viewing experience across all devices
+- **Performance Optimized** - Server-side rendering and image optimization
+- **Smooth Animations** - Polished transitions and interactions using Framer Motion
+- **SEO Ready** - Built-in SEO optimization for better visibility
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Components**: Shadcn/UI
+- **Animations**: Framer Motion
+- **Performance**: Next/Image optimization
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd portfolio-website
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 📁 Project Structure
+
+```
+├── app/                  # Next.js app directory
+│   ├── _components/      # Shared components
+│   ├── _constants/       # Constants and data
+│   ├── _contexts/        # React contexts
+│   ├── _hooks/          # Custom hooks
+│   ├── _locales/        # Translation files
+│   ├── _types/          # TypeScript types
+│   ├── _utils/          # Utility functions
+│   ├── about/          # About page
+│   ├── blog/           # Blog page
+│   ├── contact/        # Contact page
+│   └── projects/       # Projects page
+├── components/          # UI components
+├── lib/                # Library code
+├── public/             # Static assets
+└── styles/             # Global styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application can be deployed with a single click through [Vercel](https://vercel.com), the platform created by the makers of Next.js. Other hosting options like Netlify or AWS Amplify are also supported.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Customization
 
-## Learn More
+### Theme
 
-To learn more about Next.js, take a look at the following resources:
+Modify the theme in `tailwind.config.js` to match your brand colors and styling preferences.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Update your personal information and projects in:
 
-## Deploy on Vercel
+- `app/_constants/projects.ts`
+- `app/_constants/blogs.ts`
+- `app/_constants/certifications.ts`
+- `app/_constants/experience.ts`
+- `app/_constants/links.ts`
+- `app/_constants/skills.ts`
+- `app/_constants/metadata.ts`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Translations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add or modify translations in the `app/locales` directory.
+
+## 📚 Learn More
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Framer Motion Documentation](https://www.framer.com/motion/)
+- [Shadcn/UI Documentation](https://ui.shadcn.com/)
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+Built with ❤️ using Next.js and modern web technologies.
