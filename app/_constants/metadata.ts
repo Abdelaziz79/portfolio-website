@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"), // Add this line for development
+  metadataBase: new URL("https://abdelaziz-portfolio.vercel.app"), // Add this line for development
   title: "Abdelaziz Elhadry | Portfolio",
   description: "Professional portfolio showcasing my work and experience",
   keywords: [

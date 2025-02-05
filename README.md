@@ -4,6 +4,10 @@ A sleek and dynamic personal portfolio website built with cutting-edge technolog
 
 ![Portfolio Demo](public/demo.png)
 
+## 🌍 Live Demo
+
+Check out the live demo: [Portfolio Website](https://abdelaziz-portfolio.vercel.app/)
+
 ## ✨ Key Features
 
 - **Modern Design** - Elegant UI/UX powered by Tailwind CSS and Shadcn/UI components
@@ -35,7 +39,7 @@ A sleek and dynamic personal portfolio website built with cutting-edge technolog
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Abdelaziz79/portfolio-website.git
    cd portfolio-website
    ```
 
