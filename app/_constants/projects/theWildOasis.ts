@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const theWildOasis: Project = {
   id: "the-wild-oasis",
-  title: "The Wild Oasis",
+  title: "🏨 The Wild Oasis",
   description: {
     en: "A full-featured React web application that allows hotel employees to manage cabins, bookings, and guests with real-time updates and comprehensive dashboard analytics.",
     ar: "تطبيق ويب متكامل مبني بـ React يتيح لموظفي الفندق إدارة الأكواخ والحجوزات والضيوف مع تحديثات فورية وتحليلات شاملة للوحة المعلومات.",

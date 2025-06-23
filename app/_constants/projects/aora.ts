@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const aora: Project = {
   id: "aora-video-sharing",
-  title: "Aora - Video Sharing App",
+  title: "🎥 Aora - Video Sharing App",
   description: {
     en: "Aora is a React Native mobile application built with Expo and Appwrite, designed for sharing and discovering videos.",
     ar: "أورا هو تطبيق للهاتف المحمول مبني باستخدام Expo و Appwrite، مصمم لمشاركة واكتشاف مقاطع الفيديو.",

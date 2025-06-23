@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const maze: Project = {
   id: "maze-solver",
-  title: "Maze Solver",
+  title: "🧩 Maze Solver",
   description: {
     en: "A web-based maze solver application developed using React and Bootstrap. The application allows users to create and interact with a maze, set start and end points, add obstacles, and solve the maze using either Breadth-First Search (BFS) or Depth-First Search (DFS) algorithms.",
     ar: "تطبيق ويب لحل المتاهات تم تطويره باستخدام React و Bootstrap. يتيح التطبيق للمستخدمين إنشاء والتفاعل مع المتاهة، وتحديد نقاط البداية والنهاية، وإضافة العوائق، وحل المتاهة باستخدام خوارزميات البحث بالعرض أو البحث بالعمق.",

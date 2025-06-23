@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const qr: Project = {
   id: "qr-code-reader",
-  title: "QR Code Reader & Generator",
+  title: "📱 QR Code Reader & Generator",
   description: {
     en: "A simple QR code reader and generator built with Next.js. This web app allows users to generate QR codes, scan QR codes using a camera, and save generated QR codes in local storage for future use.",
     ar: "قارئ ومولد رمز QR بسيط مبني باستخدام Next.js. يتيح هذا التطبيق للمستخدمين إنشاء رموز QR، ومسح رموز QR باستخدام الكاميرا، وحفظ الرموز المولدة في التخزين المحلي للاستخدام المستقبلي.",

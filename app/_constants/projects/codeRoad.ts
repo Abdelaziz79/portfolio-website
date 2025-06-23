@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const codeRoad: Project = {
   id: "code-road",
-  title: "CodeRoad",
+  title: "💻 CodeRoad",
   description: {
     en: "A comprehensive coding education platform that offers interactive learning, quizzes, community engagement, and real-time code execution capabilities for multiple programming languages.",
     ar: "منصة تعليمية شاملة للبرمجة تقدم تعلمًا تفاعليًا واختبارات ومشاركة مجتمعية وقدرات تنفيذ الكود في الوقت الفعلي للعديد من لغات البرمجة.",

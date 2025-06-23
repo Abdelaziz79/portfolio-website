@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const fundamental: Project = {
   id: "fundamental",
-  title: "Fun & Mental",
+  title: "🚀 Fun & Mental",
   description: {
     en: "An innovative project that brings data structures and algorithms to life through interactive visualizations using React Flow and Monaco Editor.",
     ar: "مشروع مبتكر يجعل هياكل البيانات والخوارزميات حية من خلال التصورات التفاعلية باستخدام React Flow و Monaco Editor.",

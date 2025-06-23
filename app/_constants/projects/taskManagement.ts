@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const taskManagement: Project = {
   id: "task-management-mobile-app",
-  title: "Task Management Mobile App",
+  title: "📋 Task Management Mobile App",
   description: {
     en: "A React Native mobile application built with Expo for task and team management. The app features real-time notifications, team collaboration, and deadline tracking.",
     ar: "تطبيق للهاتف المحمول مبني باستخدام React Native و Expo لإدارة المهام والفرق. يتميز التطبيق بإشعارات فورية، وتعاون الفريق، وتتبع المواعيد النهائية.",

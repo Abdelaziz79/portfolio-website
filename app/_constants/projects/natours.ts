@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const natours: Project = {
   id: "natours",
-  title: "Natours",
+  title: "🌍 Natours",
   description: {
     en: "A comprehensive tour booking platform built with Node.js, featuring authentication, payment processing, tour management, and interactive maps.",
     ar: "منصة شاملة لحجز الرحلات السياحية مبنية باستخدام Node.js، تتميز بنظام المصادقة، ومعالجة المدفوعات، وإدارة الجولات، والخرائط التفاعلية.",

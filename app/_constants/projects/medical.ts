@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const medical: Project = {
   id: "medical-portfolio",
-  title: "Medical Portfolio",
+  title: "🩺 Medical Portfolio",
   description: {
     en: "A Next.js-based portfolio website for a medical professional, featuring a blog system, case management, and appointment locations.",
     ar: "موقع إلكتروني احترافي مبني على Next.js للمتخصصين في المجال الطبي، يتضمن نظام مدونة، وإدارة الحالات، ومواقع المواعيد.",

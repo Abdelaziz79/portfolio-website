@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const fullStackCMS: Project = {
   id: "full-stack-cms",
-  title: "Full Stack Content Management System",
+  title: "🗂️ Full Stack Content Management System",
   description: {
     en: "A comprehensive content management system with Express.js backend API and Next.js frontend, featuring topic management, user authentication, and automated backups.",
     ar: "نظام شامل لإدارة المحتوى مع واجهة برمجة خلفية Express.js وواجهة أمامية Next.js، يتميز بإدارة المواضيع، ومصادقة المستخدمين، والنسخ الاحتياطي التلقائي.",

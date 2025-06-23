@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const theWildOasisBooking: Project = {
   id: "the-wild-oasis-booking",
-  title: "The Wild Oasis - Booking",
+  title: "🏕️ The Wild Oasis - Booking",
   description: {
     en: "A customer-facing booking platform for The Wild Oasis hotel, allowing users to view and book cabins, manage their reservations, and update profiles with Google authentication.",
     ar: "منصة حجز للعملاء لفندق The Wild Oasis، تتيح للمستخدمين عرض وحجز الأكواخ وإدارة حجوزاتهم وتحديث ملفاتهم الشخصية باستخدام مصادقة Google.",

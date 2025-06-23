@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const maintainX: Project = {
   id: "maintainx",
-  title: "MaintainX",
+  title: "🛠️ MaintainX",
   description: {
     en: "A comprehensive mobile application built with Expo/React Native for tracking and managing vehicle maintenance tasks. Keep your vehicle in top condition by monitoring maintenance schedules, costs, and history.",
     ar: "تطبيق شامل للهاتف المحمول مبني باستخدام Expo/React Native لتتبع وإدارة مهام صيانة المركبات. حافظ على مركبتك في أفضل حالة من خلال مراقبة جداول الصيانة والتكاليف والسجل.",
