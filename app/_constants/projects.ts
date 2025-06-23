@@ -1,4 +1,5 @@
 import { Project } from "@/app/_types/types";
+import { alhedab } from "./projects/alhedab";
 import { aora } from "./projects/aora";
 import { codeRoad } from "./projects/codeRoad";
 import { fullStackCMS } from "./projects/fullStackCMS";
@@ -33,4 +34,5 @@ export const projects: Project[] = [
   maze,
   medical,
   fullStackCMS,
+  alhedab,
 ];
