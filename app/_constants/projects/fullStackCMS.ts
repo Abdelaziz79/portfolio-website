@@ -24,7 +24,6 @@ export const fullStackCMS: Project = {
     "Tailwind CSS",
     "TipTap Editor",
   ],
-  liveUrl: "https://xn--mgbaib7ak6lgt.com/",
   features: {
     en: [
       "JWT-based authentication with role-based access control",
