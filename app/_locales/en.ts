@@ -72,7 +72,7 @@ export default {
   homeDescription:
     "Full Stack Developer (MERN) specializing in Next.js and React Native. Passionate about building dynamic web and mobile apps.",
   aboutDescription:
-    "I'm a Full Stack Developer specializing in the MERN stack, Next.js, and React Native. As a recent Computer Science graduate, I'm passionate about building dynamic web and mobile applications. I love turning ideas into seamless, user-friendly experiences while continuously learning and exploring new technologies.",
+    "I'm a Full Stack Developer specialized in the MERN Stack (MongoDB, Express, React, Node.js). I build clean, modern web applications with seamless integration between frontend and backend. I'm passionate about solving problems and always eager to learn and grow.",
   footerDescription: "Building great experiences through code and design.",
   educationDescription:
     "Studied Computer Science with focus on web technologies and software engineering principles.",
