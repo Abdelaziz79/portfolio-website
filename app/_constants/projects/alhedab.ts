@@ -5,11 +5,11 @@ export const alhedab: Project = {
   title: "🏢 Alhedab - Corporate Website",
   description: {
     en: "A modern bilingual corporate portfolio website for Alhedab, a leading Egyptian company in general contracting and investment, built with Next.js 15 and Tailwind CSS.",
-    ar: "موقع احترافي حديث متعدد اللغات لشركة الهداب، وهي شركة مصرية رائدة في المقاولات العامة والاستثمار، مبني باستخدام Next.js 15 و Tailwind CSS.",
+    ar: "موقع احترافي حديث متعدد اللغات لشركة الهضاب، وهي شركة مصرية رائدة في المقاولات العامة والاستثمار، مبني باستخدام Next.js 15 و Tailwind CSS.",
   },
   fullDescription: {
     en: "This is the official website for Alhedab, showcasing the company's services, values, projects, and leadership. Built with a modern tech stack including Next.js 15, Tailwind CSS, Shadcn/UI, and Framer Motion, the site provides bilingual support, responsive design, SEO optimization, dark/light themes, and dynamic interactive sections.",
-    ar: "هذا هو الموقع الرسمي لشركة الهداب، يعرض خدمات الشركة، وقيمها، ومشاريعها، وفريق القيادة. مبني باستخدام تقنيات حديثة مثل Next.js 15 و Tailwind CSS و Shadcn/UI و Framer Motion، ويدعم تعدد اللغات، وتصميم متجاوب، وتحسين محركات البحث، والوضعين الداكن والفاتح، وأقسام تفاعلية ديناميكية.",
+    ar: "هذا هو الموقع الرسمي لشركة الهضاب، يعرض خدمات الشركة، وقيمها، ومشاريعها، وفريق القيادة. مبني باستخدام تقنيات حديثة مثل Next.js 15 و Tailwind CSS و Shadcn/UI و Framer Motion، ويدعم تعدد اللغات، وتصميم متجاوب، وتحسين محركات البحث، والوضعين الداكن والفاتح، وأقسام تفاعلية ديناميكية.",
   },
   image: "/projects/alhedab/preview-1.png", // Replace with your local thumbnail path
   technologies: [
