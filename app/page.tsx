@@ -95,7 +95,7 @@ export default function HomePage() {
                 >
                   <Link href="/resume.pdf" target="_blank">
                     <Download className="h-4 w-4" />
-                    {t("resume")}
+                    Resume
                   </Link>
                 </Button>
                 <div className="h-4 w-px bg-border" />
@@ -107,7 +107,7 @@ export default function HomePage() {
                 >
                   <Link href="/cv.pdf" target="_blank">
                     <Download className="h-4 w-4" />
-                    {t("cv")}
+                    CV
                   </Link>
                 </Button>
                 <div className="h-4 w-px bg-border" />
