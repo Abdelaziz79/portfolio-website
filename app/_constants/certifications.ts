@@ -11,7 +11,7 @@ export const certifications: Certification[] = [
       ar: "يوديمي",
       en: "Udemy",
     },
-    date: "2024",
+    date: "2025",
 
     image: "/images/react.jpg",
   },
@@ -25,7 +25,7 @@ export const certifications: Certification[] = [
       ar: "يوديمي",
       en: "Udemy",
     },
-    date: "2024",
+    date: "2025",
 
     image: "/images/node-js.jpg",
   },
@@ -39,7 +39,7 @@ export const certifications: Certification[] = [
       ar: "معهد تكنولوجيا المعلومات (ITI)",
       en: "Information Technology Institute (ITI)",
     },
-    date: "2024",
+    date: "2023",
 
     image: "/images/react-iti.png",
   },
