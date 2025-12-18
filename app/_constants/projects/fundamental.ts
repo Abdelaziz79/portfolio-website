@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const fundamental: Project = {
   id: "fundamental",
-  title: "🚀 Fun & Mental",
+  title: "Fun & Mental",
   description: {
     en: "An innovative project that brings data structures and algorithms to life through interactive visualizations using React Flow and Monaco Editor.",
     ar: "مشروع مبتكر يجعل هياكل البيانات والخوارزميات حية من خلال التصورات التفاعلية باستخدام React Flow و Monaco Editor.",
@@ -52,34 +52,7 @@ export const fundamental: Project = {
       "إدارة التخطيط المتكاملة باستخدام مكتبة ELK",
     ],
   },
-  challenges: {
-    en: [
-      "Implementing complex data structure visualizations",
-      "Creating interactive and responsive layouts",
-      "Managing state across different visualization components",
-      "Integrating multiple third-party libraries effectively",
-    ],
-    ar: [
-      "تنفيذ تصورات معقدة لهياكل البيانات",
-      "إنشاء تخطيطات تفاعلية ومتجاوبة",
-      "إدارة الحالة عبر مكونات التصور المختلفة",
-      "دمج مكتبات متعددة من طرف ثالث بشكل فعال",
-    ],
-  },
-  solutions: {
-    en: [
-      "Utilized React Flow for dynamic node and edge creation",
-      "Implemented custom node and edge types for better interactivity",
-      "Used ELK library for efficient layout management",
-      "Created reusable components for different data structures",
-    ],
-    ar: [
-      "استخدام React Flow لإنشاء العقد والحواف الديناميكية",
-      "تنفيذ أنواع مخصصة للعقد والحواف لتفاعل أفضل",
-      "استخدام مكتبة ELK لإدارة التخطيط بكفاءة",
-      "إنشاء مكونات قابلة لإعادة الاستخدام لهياكل البيانات المختلفة",
-    ],
-  },
+
   screenshots: [
     "/projects/project-1/pr1-1.png",
     "/projects/project-1/pr1-2.png",

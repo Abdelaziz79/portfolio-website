@@ -64,7 +64,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   return (
     <LanguageContext.Provider value={value}>
       <div
-        className={`${currentLocale === "ar" ? "font-cairo" : "font-inter"} `}
+        className={`${currentLocale === "ar" ? "font-arabic" : "font-latin"} `}
       >
         {children}
       </div>

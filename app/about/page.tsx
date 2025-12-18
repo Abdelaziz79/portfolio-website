@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-purple-600 blur-2xl opacity-20" />
           <div className="relative w-full h-full rounded-full border-2 border-border overflow-hidden">
             <Image
-              src="/images/abdelaziz.jpeg" // Add your profile image here
+              src="/images/abdelaziz.png"
               alt="Profile picture"
               fill
               sizes="(max-width: 768px) 16rem, 20rem"

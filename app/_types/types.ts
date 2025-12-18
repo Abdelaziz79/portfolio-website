@@ -12,7 +12,12 @@ export type Project = {
   image: string;
   technologies: string[];
   liveUrl?: string;
-  githubUrl?: string;
+  githubUrl?:
+    | string
+    | {
+        backend: string;
+        frontend: string;
+      };
   features: {
     ar: string[];
     en: string[];
@@ -26,14 +31,6 @@ export type Project = {
     en: string;
   };
   screenshots: string[];
-  challenges: {
-    ar: string[];
-    en: string[];
-  };
-  solutions: {
-    ar: string[];
-    en: string[];
-  };
 
   acknowledgment?: {
     ar: string;
@@ -70,6 +67,7 @@ export type Blog = {
 };
 
 export type Experience = {
+  link?: string;
   id: string;
   title: {
     ar: string;

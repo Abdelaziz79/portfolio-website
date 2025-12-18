@@ -5,13 +5,14 @@ export default {
   home: "Home",
   title: "Abdelaziz Elhadry",
   me: "Abdelaziz Elhadry",
-  about: "About Me",
+  about: "About",
   projects: "Projects",
   contact: "Contact",
   navigation: "Navigation",
   resources: "Resources",
   blog: "Blog",
   resume: "Resume",
+  cv: "CV",
   contactMe: "Contact Me",
   education: "Education",
   overview: "Overview",
@@ -24,6 +25,7 @@ export default {
   email: "Email",
   message: "Message",
   category: "Category",
+  sending: "Sending",
 
   // ======================================================
   // Multi-word translations
@@ -39,6 +41,8 @@ export default {
   goBack: "Go Back",
   allRightsReserved: "All rights reserved.",
   viewCode: "View Code",
+  backendCode: "Backend Code",
+  frontendCode: "Frontend Code",
   viewDetails: "View Details",
   backToProjects: "Back to Projects",
   keyFeatures: "Key Features",
@@ -63,6 +67,11 @@ export default {
   copiedToClipboardDescription: "Link copied to clipboard",
   workTitle: "Full Stack Developer",
   projectNotFound: "Project Not Found",
+  loadMore: "Load More",
+  remaining: "remaining",
+  allProjectsLoaded: "All projects loaded",
+  getInTouchDescription:
+    "Feel free to reach out through any of these platforms",
 
   // ======================================================
   // Long descriptions
@@ -70,9 +79,9 @@ export default {
   projectNotFoundDescription:
     "Sorry, we couldn't find the project you're looking for. It might have been moved or deleted.",
   homeDescription:
-    "Full Stack Developer (MERN) specializing in Next.js and React Native. Passionate about building dynamic web and mobile apps.",
+    "Full Stack Developer specializing in React, Next.js, Node.js, Express, NestJS, and MongoDB, building modern and reliable web applications.",
   aboutDescription:
-    "I'm a Full Stack Developer specialized in the MERN Stack (MongoDB, Express, React, Node.js). I build clean, modern web applications with seamless integration between frontend and backend. I'm passionate about solving problems and always eager to learn and grow.",
+    "Full Stack Developer specializing in React, Next.js, Node.js, NestJS, Express, and MongoDB, with experience building scalable, modern web applications and well-structured backend services. Focused on clean architecture, seamless frontend–backend integration, and continuous learning.",
   footerDescription: "Building great experiences through code and design.",
   educationDescription:
     "Studied Computer Science with focus on web technologies and software engineering principles.",
@@ -84,4 +93,14 @@ export default {
     "Oops! The page you're looking for doesn't exist. It might have been moved or deleted.",
   blogDescription:
     "I write about web development, design, and other things that interest me.",
+  nameError: "Name must be at least 3 characters",
+  nameRequired: "Name is required",
+  emailError: "Please enter a valid email address",
+  emailRequired: "Email is required",
+  messageError: "Message must be at least 10 characters",
+  messageRequired: "Message is required",
+  fixMessage: "Please fix the errors in the form",
+  messageSent: "Message sent successfully!",
+  messageFailed: "Failed to send message",
+  networkError: "Network error",
 } as const;

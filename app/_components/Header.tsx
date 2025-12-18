@@ -68,14 +68,14 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
+        "sticky top-0 z-50 w-full transition-all duration-300 ",
         "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60",
         isScrolled ? "border-border shadow-md" : "border-transparent",
         isRTL ? "flex-row-reverse" : ""
       )}
     >
       {/* Outer container for full-width background */}
-      <div className="w-full mx-auto">
+      <div className="w-full mx-auto border-b">
         {/* Inner container for content with consistent padding */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
@@ -86,10 +86,8 @@ export default function Header() {
                 whileTap={{ scale: 0.95 }}
                 className="relative z-10"
               >
-                <h1 className="text-xl font-bold tracking-tighter">
-                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    {t("title")}
-                  </span>
+                <h1 className="text-xl font-semibold">
+                  <span className="">{t("title")}</span>
                 </h1>
               </motion.div>
             </Link>
@@ -137,8 +135,12 @@ export default function Header() {
                   className="gap-2 transition-transform hover:scale-105"
                 >
                   <GlobeIcon className="h-4 w-4" />
-                  <span className="font-medium">
-                    {language === "en" ? "عربي" : "English"}
+                  <span
+                    className={`font-medium ${
+                      isRTL ? "font-latin" : "font-arabic"
+                    }`}
+                  >
+                    {isRTL ? "English" : "عربي"}
                   </span>
                 </Button>
 
@@ -175,7 +177,12 @@ export default function Header() {
                     <span className="sr-only">Toggle menu</span>
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-[200px]">
+                <DropdownMenuContent
+                  align="end"
+                  className={`w-[200px] ${
+                    isRTL ? "font-arabic" : "font-latin"
+                  } `}
+                >
                   {navItems.map(({ href, label, icon: Icon }) => (
                     <Link key={href} href={href}>
                       <DropdownMenuItem className="gap-2 cursor-pointer">
@@ -207,8 +214,10 @@ export default function Header() {
                     onClick={toggleLanguage}
                     className="gap-2 cursor-pointer"
                   >
-                    <GlobeIcon className="h-4 w-4" />
-                    <span>{language === "en" ? "عربي" : "English"}</span>
+                    <GlobeIcon className={`h-4 w-4 `} />
+                    <span className={`${isRTL ? "font-latin" : "font-arabic"}`}>
+                      {language === "en" ? "عربي" : "English"}
+                    </span>
                   </DropdownMenuItem>
 
                   <DropdownMenuItem

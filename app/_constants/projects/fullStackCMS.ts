@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const fullStackCMS: Project = {
   id: "full-stack-cms",
-  title: "🗂️ Full Stack Content Management System",
+  title: "Full Stack Content Management System",
   description: {
     en: "A comprehensive content management system with Express.js backend API and Next.js frontend, featuring topic management, user authentication, and automated backups.",
     ar: "نظام شامل لإدارة المحتوى مع واجهة برمجة خلفية Express.js وواجهة أمامية Next.js، يتميز بإدارة المواضيع، ومصادقة المستخدمين، والنسخ الاحتياطي التلقائي.",
@@ -76,44 +76,4 @@ export const fullStackCMS: Project = {
     "/projects/project-12/pr12-3.png",
     "/projects/project-12/pr12-4.png",
   ],
-  challenges: {
-    en: [
-      "Implementing seamless integration between Express.js backend and Next.js frontend",
-      "Creating a unified authentication system across the full stack",
-      "Managing complex state with multiple user roles and permissions",
-      "Implementing bilingual support with RTL capabilities",
-      "Setting up automated backup system with restoration features",
-      "Ensuring consistent data flow and error handling between frontend and backend",
-      "Optimizing performance for large-scale content management",
-    ],
-    ar: [
-      "تنفيذ تكامل سلس بين الواجهة الخلفية Express.js والواجهة الأمامية Next.js",
-      "إنشاء نظام مصادقة موحد عبر النظام بأكمله",
-      "إدارة الحالة المعقدة مع أدوار وصلاحيات المستخدمين المتعددة",
-      "تنفيذ دعم ثنائي اللغة مع إمكانيات RTL",
-      "إعداد نظام نسخ احتياطي تلقائي مع ميزات الاستعادة",
-      "ضمان تدفق البيانات المتسق ومعالجة الأخطاء بين الواجهة الأمامية والخلفية",
-      "تحسين الأداء لإدارة المحتوى على نطاق واسع",
-    ],
-  },
-  solutions: {
-    en: [
-      "Developed a robust API architecture with comprehensive documentation",
-      "Implemented JWT-based authentication with secure cookie handling",
-      "Created custom hooks and context providers for state management",
-      "Used Next.js internationalization features with custom RTL styling",
-      "Integrated node-cron for automated MongoDB backups",
-      "Implemented global error handling and loading states",
-      "Applied caching strategies and pagination for optimal performance",
-    ],
-    ar: [
-      "تطوير بنية API قوية مع توثيق شامل",
-      "تنفيذ المصادقة المستندة إلى JWT مع معالجة آمنة للكوكيز",
-      "إنشاء خطافات مخصصة ومزودي سياق لإدارة الحالة",
-      "استخدام ميزات التدويل في Next.js مع تنسيق RTL مخصص",
-      "دمج node-cron للنسخ الاحتياطي التلقائي لـ MongoDB",
-      "تنفيذ معالجة الأخطاء العالمية وحالات التحميل",
-      "تطبيق استراتيجيات التخزين المؤقت والتصفح للأداء الأمثل",
-    ],
-  },
 };

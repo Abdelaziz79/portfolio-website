@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const maintainX: Project = {
   id: "maintainx",
-  title: "🛠️ MaintainX",
+  title: "MaintainX",
   description: {
     en: "A comprehensive mobile application built with Expo/React Native for tracking and managing vehicle maintenance tasks. Keep your vehicle in top condition by monitoring maintenance schedules, costs, and history.",
     ar: "تطبيق شامل للهاتف المحمول مبني باستخدام Expo/React Native لتتبع وإدارة مهام صيانة المركبات. حافظ على مركبتك في أفضل حالة من خلال مراقبة جداول الصيانة والتكاليف والسجل.",
@@ -55,34 +55,7 @@ export const maintainX: Project = {
       "سجلات مفصلة لإكمال المهام وتتبع عداد المسافة",
     ],
   },
-  challenges: {
-    en: [
-      "Implementing bilingual support with RTL layout",
-      "Creating an efficient local data storage system",
-      "Building responsive and intuitive UI components",
-      "Developing comprehensive analytics visualizations",
-    ],
-    ar: [
-      "تنفيذ الدعم الثنائي اللغة مع تخطيط من اليمين إلى اليسار",
-      "إنشاء نظام تخزين محلي فعال",
-      "بناء مكونات واجهة مستخدم سريعة الاستجابة وبديهية",
-      "تطوير تصورات تحليلية شاملة",
-    ],
-  },
-  solutions: {
-    en: [
-      "Utilized NativeWind for consistent cross-platform styling",
-      "Implemented AsyncStorage for efficient local data management",
-      "Created custom hooks for shared functionality",
-      "Used Expo Router for seamless file-based navigation",
-    ],
-    ar: [
-      "استخدام NativeWind للتنسيق المتناسق عبر المنصات",
-      "تطبيق AsyncStorage لإدارة البيانات المحلية بكفاءة",
-      "إنشاء خطافات مخصصة للوظائف المشتركة",
-      "استخدام Expo Router للتنقل السلس القائم على الملفات",
-    ],
-  },
+
   screenshots: [
     "/projects/project-6/pr6-1.jpeg",
     "/projects/project-6/pr6-2.jpeg",

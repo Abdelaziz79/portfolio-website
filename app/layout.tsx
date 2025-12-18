@@ -3,20 +3,23 @@ import Header from "@/app/_components/Header";
 import { metadata as mData } from "@/app/_constants/metadata";
 import { LanguageProvider } from "@/app/_contexts/LanguageContext";
 import "@/app/globals.css";
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
-import { Cairo, Inter } from "next/font/google";
+import { Noto_Sans_Arabic, Plus_Jakarta_Sans } from "next/font/google";
+import ShimmerBackground from "./_components/ShimmerBackground";
 
-const inter = Inter({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-latin",
   display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const cairo = Cairo({
+const notoArabic = Noto_Sans_Arabic({
   subsets: ["arabic"],
-  variable: "--font-cairo",
+  variable: "--font-arabic",
   display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata = mData;
@@ -29,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${cairo.variable} antialiased min-h-screen flex flex-col bg-gradient-to-b from-background to-background/95 dark:from-background dark:to-background/95`}
+        className={`${plusJakarta.variable} ${notoArabic.variable} antialiased min-h-screen flex flex-col bg-gradient-to-b from-background to-background/95 dark:from-background dark:to-background/95`}
       >
         <ThemeProvider
           attribute="class"
@@ -42,6 +45,7 @@ export default function RootLayout({
               <Header />
               <main className="flex-grow">
                 <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+                  <ShimmerBackground />
                   {children}
                 </div>
               </main>
@@ -49,7 +53,7 @@ export default function RootLayout({
             </div>
           </LanguageProvider>
         </ThemeProvider>
-        <Toaster />
+        <Toaster position="top-center" />
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import { useLanguage } from "@/app/_contexts/LanguageContext";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home } from "lucide-react";
+import { Home } from "lucide-react";
 import Link from "next/link";
 
 function ProjectNotFound() {
@@ -27,7 +27,6 @@ function ProjectNotFound() {
             href="/projects"
             className={cn(buttonVariants({ variant: "default" }), "gap-2")}
           >
-            <ArrowLeft className="h-4 w-4" />
             {t("backToProjects")}
           </Link>
           <Link

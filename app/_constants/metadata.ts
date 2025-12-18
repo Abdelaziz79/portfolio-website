@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://abdelaziz-portfolio.vercel.app"), // Add this line for development
+  metadataBase: new URL("https://abdelaziz-portfolio.vercel.app"),
   title: "Abdelaziz Elhadry | Portfolio",
   description: "Professional portfolio showcasing my work and experience",
   keywords: [
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "react native",
     "node.js",
     "express",
+    "nest.js",
     "mongodb",
     "typescript",
     "javascript",

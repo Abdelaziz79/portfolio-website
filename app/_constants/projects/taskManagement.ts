@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const taskManagement: Project = {
   id: "task-management-mobile-app",
-  title: "📋 Task Management Mobile App",
+  title: "Task Management Mobile App",
   description: {
     en: "A React Native mobile application built with Expo for task and team management. The app features real-time notifications, team collaboration, and deadline tracking.",
     ar: "تطبيق للهاتف المحمول مبني باستخدام React Native و Expo لإدارة المهام والفرق. يتميز التطبيق بإشعارات فورية، وتعاون الفريق، وتتبع المواعيد النهائية.",
@@ -60,38 +60,4 @@ export const taskManagement: Project = {
     "/projects/project-8/pr8-2.jpg",
     "/projects/project-8/pr8-3.jpg",
   ],
-  challenges: {
-    en: [
-      "Implementing real-time synchronization across multiple users",
-      "Managing complex state with team-based permissions",
-      "Handling offline data persistence and synchronization",
-      "Implementing cross-platform gesture handling and animations",
-      "Managing push notifications across different platforms",
-    ],
-    ar: [
-      "تنفيذ المزامنة الفورية عبر مستخدمين متعددين",
-      "إدارة الحالة المعقدة مع أذونات قائمة على الفريق",
-      "التعامل مع استمرارية البيانات دون اتصال والمزامنة",
-      "تنفيذ معالجة الإيماءات والرسوم المتحركة عبر المنصات",
-      "إدارة الإشعارات الدفعية عبر منصات مختلفة",
-    ],
-  },
-  solutions: {
-    en: [
-      "Utilized Supabase for robust backend infrastructure and real-time subscriptions",
-      "Implemented role-based access control for team management",
-      "Used React Native Reanimated for smooth animations and gestures",
-      "Integrated Expo Notifications for cross-platform push notifications",
-      "Employed file-based routing with Expo Router for better navigation management",
-      "Implemented NativeWind for consistent cross-platform styling",
-    ],
-    ar: [
-      "استخدام Supabase للبنية التحتية الخلفية القوية والاشتراكات الفورية",
-      "تنفيذ التحكم في الوصول القائم على الأدوار لإدارة الفريق",
-      "استخدام React Native Reanimated للرسوم المتحركة والإيماءات السلسة",
-      "دمج إشعارات Expo للإشعارات الدفعية عبر المنصات",
-      "استخدام التوجيه القائم على الملفات مع Expo Router لإدارة التنقل بشكل أفضل",
-      "تنفيذ NativeWind للتنسيق المتناسق عبر المنصات",
-    ],
-  },
 };

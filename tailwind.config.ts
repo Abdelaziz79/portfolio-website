@@ -12,7 +12,8 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)"],
         inter: ["var(--font-inter)"],
-        cairo: ["var(--font-cairo)"],
+        arabic: ["var(--font-arabic)"],
+        latin: ["var(--font-latin)"],
       },
       colors: {
         background: "hsl(var(--background))",

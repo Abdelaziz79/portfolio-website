@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const maze: Project = {
   id: "maze-solver",
-  title: "🧩 Maze Solver",
+  title: "Maze Solver",
   description: {
     en: "A web-based maze solver application developed using React and Bootstrap. The application allows users to create and interact with a maze, set start and end points, add obstacles, and solve the maze using either Breadth-First Search (BFS) or Depth-First Search (DFS) algorithms.",
     ar: "تطبيق ويب لحل المتاهات تم تطويره باستخدام React و Bootstrap. يتيح التطبيق للمستخدمين إنشاء والتفاعل مع المتاهة، وتحديد نقاط البداية والنهاية، وإضافة العوائق، وحل المتاهة باستخدام خوارزميات البحث بالعرض أو البحث بالعمق.",
@@ -47,38 +47,4 @@ export const maze: Project = {
     "/projects/project-10/pr10-1.png",
     "/projects/project-10/pr10-2.png",
   ],
-  challenges: {
-    en: [
-      "Implementing complex graph traversal algorithms (BFS and DFS) in a visual environment",
-      "Creating an intuitive user interaction system for maze element placement",
-      "Managing state for dynamic maze dimensions and solver speed",
-      "Developing a responsive interface that works across different screen sizes",
-      "Visualizing algorithm execution in real-time with adjustable speeds",
-    ],
-    ar: [
-      "تنفيذ خوارزميات اجتياز الرسم البياني المعقدة في بيئة مرئية",
-      "إنشاء نظام تفاعل مستخدم بديهي لوضع عناصر المتاهة",
-      "إدارة الحالة لأبعاد المتاهة الديناميكية وسرعة الحل",
-      "تطوير واجهة متجاوبة تعمل عبر أحجام الشاشات المختلفة",
-      "تصور تنفيذ الخوارزمية في الوقت الفعلي مع سرعات قابلة للتعديل",
-    ],
-  },
-  solutions: {
-    en: [
-      "Built modular React components for better code organization and reusability",
-      "Implemented a multi-click system for intuitive maze element placement",
-      "Used Bootstrap for responsive design and consistent styling",
-      "Created a component-based architecture separating concerns between Main, MiniCube, and NavBar",
-      "Developed a flexible state management system for handling maze configurations",
-      "Implemented visualization controls for algorithm execution speed",
-    ],
-    ar: [
-      "بناء مكونات React نمطية لتنظيم أفضل للكود وإعادة الاستخدام",
-      "تنفيذ نظام النقر المتعدد لوضع عناصر المتاهة بشكل بديهي",
-      "استخدام Bootstrap للتصميم المتجاوب والتنسيق المتناسق",
-      "إنشاء هيكل معماري قائم على المكونات يفصل بين Main و MiniCube و NavBar",
-      "تطوير نظام مرن لإدارة الحالة للتعامل مع تكوينات المتاهة",
-      "تنفيذ عناصر تحكم في التصور لسرعة تنفيذ الخوارزمية",
-    ],
-  },
 };

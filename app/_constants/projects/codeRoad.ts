@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const codeRoad: Project = {
   id: "code-road",
-  title: "💻 CodeRoad",
+  title: "CodeRoad",
   description: {
     en: "A comprehensive coding education platform that offers interactive learning, quizzes, community engagement, and real-time code execution capabilities for multiple programming languages.",
     ar: "منصة تعليمية شاملة للبرمجة تقدم تعلمًا تفاعليًا واختبارات ومشاركة مجتمعية وقدرات تنفيذ الكود في الوقت الفعلي للعديد من لغات البرمجة.",
@@ -57,34 +57,7 @@ export const codeRoad: Project = {
       "توجيه ديناميكي على جانب العميل",
     ],
   },
-  challenges: {
-    en: [
-      "Implementing real-time code execution across multiple languages",
-      "Building a comprehensive quiz system with result tracking",
-      "Creating an efficient search system across multiple content types",
-      "Managing two separate backend versions (Supabase and .NET)",
-    ],
-    ar: [
-      "تنفيذ تنفيذ الكود في الوقت الفعلي عبر لغات متعددة",
-      "بناء نظام اختبارات شامل مع تتبع النتائج",
-      "إنشاء نظام بحث فعال عبر أنواع محتوى متعددة",
-      "إدارة نسختين منفصلتين من الواجهة الخلفية (Supabase و.NET)",
-    ],
-  },
-  solutions: {
-    en: [
-      "Integrated LiveCodes for multi-language code execution",
-      "Utilized React Query for efficient data management",
-      "Implemented Context API for state management",
-      "Created separate branches for different backend implementations",
-    ],
-    ar: [
-      "دمج LiveCodes لتنفيذ الكود متعدد اللغات",
-      "استخدام React Query لإدارة البيانات بكفاءة",
-      "تنفيذ Context API لإدارة الحالة",
-      "إنشاء فروع منفصلة لتنفيذات الواجهة الخلفية المختلفة",
-    ],
-  },
+
   screenshots: [
     "/projects/project-4/pr4-1.png",
     "/projects/project-4/pr4-2.jpg",

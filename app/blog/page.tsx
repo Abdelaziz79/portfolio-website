@@ -53,7 +53,7 @@ export default function BlogPage() {
           <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
           <Input
             placeholder={t("searchPosts")}
-            className="pl-10"
+            className="pl-10 bg-card"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />

@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const aora: Project = {
   id: "aora-video-sharing",
-  title: "🎥 Aora - Video Sharing App",
+  title: "Aora - Video Sharing App",
   description: {
     en: "Aora is a React Native mobile application built with Expo and Appwrite, designed for sharing and discovering videos.",
     ar: "أورا هو تطبيق للهاتف المحمول مبني باستخدام Expo و Appwrite، مصمم لمشاركة واكتشاف مقاطع الفيديو.",
@@ -60,40 +60,7 @@ export const aora: Project = {
     "/projects/project-9/pr9-2.jpg",
     "/projects/project-9/pr9-3.jpg",
   ],
-  challenges: {
-    en: [
-      "Implementing efficient video processing and playback",
-      "Managing large media file uploads",
-      "Creating a responsive and performant search system",
-      "Handling video thumbnail generation",
-      "Implementing smooth navigation between different app sections",
-    ],
-    ar: [
-      "تنفيذ معالجة وتشغيل الفيديو بكفاءة",
-      "إدارة تحميل ملفات الوسائط الكبيرة",
-      "إنشاء نظام بحث سريع الاستجابة وعالي الأداء",
-      "التعامل مع إنشاء الصور المصغرة للفيديو",
-      "تنفيذ تنقل سلس بين أقسام التطبيق المختلفة",
-    ],
-  },
-  solutions: {
-    en: [
-      "Utilized Expo AV for optimized video playback",
-      "Integrated Appwrite for reliable backend services and file storage",
-      "Implemented NativeWind for consistent cross-platform styling",
-      "Used Expo Router for efficient file-based navigation",
-      "Created a modular project structure for better code organization",
-      "Implemented environment-based configuration for different deployment scenarios",
-    ],
-    ar: [
-      "استخدام Expo AV لتشغيل الفيديو الأمثل",
-      "دمج Appwrite لخدمات الخلفية وتخزين الملفات الموثوقة",
-      "تنفيذ NativeWind للتنسيق المتناسق عبر المنصات",
-      "استخدام Expo Router للتنقل الفعال القائم على الملفات",
-      "إنشاء هيكل مشروع وحدوي لتنظيم التعليمات البرمجية بشكل أفضل",
-      "تنفيذ تكوين قائم على البيئة لسيناريوهات النشر المختلفة",
-    ],
-  },
+
   acknowledgment: {
     en: "This project was developed as part of the JavaScript Mastery React Native course on YouTube, providing comprehensive learning in mobile app development.",
     ar: "تم تطوير هذا المشروع كجزء من دورة JavaScript Mastery للتطوير باستخدام React Native على YouTube، والتي توفر تعلمًا شاملاً في تطوير تطبيقات الهاتف المحمول.",

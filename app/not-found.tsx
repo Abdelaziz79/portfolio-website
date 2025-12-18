@@ -3,11 +3,13 @@
 import { useLanguage } from "@/app/_contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Home, MoveLeft } from "lucide-react";
+import { Home } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function NotFoundPage() {
   const { t } = useLanguage();
+  const router = useRouter();
 
   return (
     <div className="min-h-[80vh] flex items-center justify-center">
@@ -49,11 +51,14 @@ export default function NotFoundPage() {
               {t("backToHome")}
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="gap-2">
-            <Link href="javascript:history.back()">
-              <MoveLeft className="h-5 w-5" />
-              {t("goBack")}
-            </Link>
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className=" cursor-pointer"
+            onClick={() => router.back()}
+          >
+            <span>{t("goBack")}</span>
           </Button>
         </motion.div>
       </div>

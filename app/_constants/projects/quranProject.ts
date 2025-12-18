@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const quranProject: Project = {
   id: "quran-project",
-  title: "📖 القرآن الكريم - Quran Project",
+  title: "القرآن الكريم - Quran Project",
   description: {
     en: "A modern web application for reading, memorizing, and reviewing the Holy Quran, built with Next.js and React.",
     ar: "تطبيق ويب حديث لقراءة وحفظ ومراجعة القرآن الكريم، مبني باستخدام Next.js وReact.",
@@ -55,34 +55,7 @@ export const quranProject: Project = {
       "نظام تتبع التقدم",
     ],
   },
-  challenges: {
-    en: [
-      "Implementing accurate Arabic text rendering and typography",
-      "Integrating audio playback with verse-level repetition control",
-      "Designing an intuitive memorization workflow",
-      "Ensuring smooth PWA offline experience",
-    ],
-    ar: [
-      "تنفيذ عرض دقيق للنص العربي والطباعة",
-      "دمج تشغيل الصوت مع تحكم في تكرار الآيات",
-      "تصميم تجربة حفظ سهلة وبديهية",
-      "ضمان تجربة سلسة لتطبيق PWA في وضع عدم الاتصال",
-    ],
-  },
-  solutions: {
-    en: [
-      "Used TailwindCSS and custom fonts for clean Arabic text",
-      "Built a reusable audio player with repeat logic",
-      "Designed lesson-based memorization with spaced repetition model",
-      "Utilized Next.js PWA plugins for offline and installable experience",
-    ],
-    ar: [
-      "استخدام TailwindCSS وخطوط مخصصة لنص عربي واضح",
-      "بناء مشغل صوتي قابل لإعادة الاستخدام مع منطق التكرار",
-      "تصميم دروس حفظ تعتمد على التكرار المتباعد",
-      "استخدام إضافات Next.js لدعم وضع عدم الاتصال والتثبيت",
-    ],
-  },
+
   screenshots: [
     "/projects/quran-project/preview-1.png",
     "/projects/quran-project/preview-2.png",

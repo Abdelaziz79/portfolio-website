@@ -11,7 +11,8 @@ export default {
   navigation: "التنقل",
   resources: "المصادر",
   blog: "المدونة",
-  resume: "السيرة الذاتية",
+  resume: "الملف الشخصي",
+  cv: "السيرة الذاتية",
   contactMe: "تواصل معي",
   education: "التعليم",
   overview: "نظرة عامة",
@@ -24,6 +25,7 @@ export default {
   email: "البريد الإلكتروني",
   message: "الرسالة",
   category: "الفئة",
+  sending: "جاري الإرسال",
 
   // ======================================================
   // Multi-word translations
@@ -39,6 +41,8 @@ export default {
   goBack: "رجوع",
   allRightsReserved: "جميع الحقوق محفوظة.",
   viewCode: "عرض الكود",
+  backendCode: "كود Backend",
+  frontendCode: "كود Frontend",
   viewDetails: "عرض التفاصيل",
   backToProjects: "العودة للمشاريع",
   keyFeatures: "المميزات الرئيسية",
@@ -54,7 +58,7 @@ export default {
   send: "إرسال الرسالة",
   backToHome: "العودة للرئيسية",
   educationTitle: "بكالوريوس علوم الحاسب",
-  educationDate: "جامعة المنوفية • ٢٠٢٠ - ٢٠٢٤",
+  educationDate: "جامعة المنوفية • 2020 - 2024",
   acknowledgment: "شكر وتقدير",
   learnMore: "اقرأ المزيد",
   contactInformation: "معلومات التواصل",
@@ -63,15 +67,18 @@ export default {
   copiedToClipboardDescription: "تم نسخ الرابط",
   workTitle: "مطور Full Stack",
   projectNotFound: "المشروع غير موجود",
+  loadMore: "تحميل المزيد",
+  remaining: "متبقي",
+  allProjectsLoaded: "تم تحميل جميع المشاريع",
+  getInTouchDescription: "لا تتردد في التواصل عبر أي من هذه المنصات",
 
   // ======================================================
   // Long descriptions
   // ======================================================
   homeDescription:
-    "مطور ويب متكامل (MERN) متخصص في Next.js و React Native. شغوف ببناء تطبيقات ويب وموبايل ديناميكية.",
-
+    "مطور Full Stack متخصص في React، Next.js، Node.js، Express، NestJS و MongoDB، أعمل على بناء تطبيقات ويب حديثة وموثوقة.",
   aboutDescription:
-    "أنا مطور برمجيات متكامل (Full Stack) متخصص في MERN Stack (MongoDB، Express، React، Node.js). أعمل على تطوير تطبيقات ويب حديثة بواجهات نظيفة وتكامل سلس بين الواجهة الأمامية والخلفية. شغوف بحل المشكلات ومواكب للتقنيات الجديدة باستمرار.",
+    "مطور Full Stack متخصص في React، Next.js، Node.js، NestJS، Express و MongoDB، لدي خبرة في تطوير تطبيقات ويب حديثة وبناء أنظمة backend منظمة. أركز على كتابة كود نظيف وتحقيق تكامل جيد بين frontend و backend، مع اهتمام مستمر بالتعلم وتطوير المهارات.",
   footerDescription: "بناء تجارب رائعة من خلال البرمجة والتصميم.",
   educationDescription:
     "درست علوم الحاسب مع التركيز على تقنيات الويب ومبادئ هندسة البرمجيات.",
@@ -83,4 +90,14 @@ export default {
   blogDescription: "أكتب عن تطوير الويب والتصميم وأشياء أخرى تهمني.",
   projectNotFoundDescription:
     "عذراً، لم نتمكن من العثور على المشروع الذي تبحث عنه. ربما تم نقله أو حذفه.",
+  nameError: "الاسم يجب أن يكون على الأقل 3 حروف",
+  nameRequired: "الاسم مطلوب",
+  emailError: "يرجى إدخال عنوان بريد إلكتروني صحيح",
+  emailRequired: "البريد الإلكتروني مطلوب",
+  messageError: "الرسالة يجب أن تكون على الأقل 10 حروف",
+  messageRequired: "الرسالة مطلوبة",
+  fixMessage: "يرجى تصحيح الأخطاء في النموذج",
+  messageSent: "تم إرسال الرسالة بنجاح!",
+  messageFailed: "فشل في إرسال الرسالة",
+  networkError: "خطأ في الشبكة",
 } as const;

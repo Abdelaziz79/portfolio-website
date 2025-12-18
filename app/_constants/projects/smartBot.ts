@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const smartBot: Project = {
   id: "smart-bot",
-  title: "🤖 Multi-Purpose Telegram Bot",
+  title: "Multi-Purpose Telegram Bot",
   description: {
     en: "A feature-rich Telegram bot built with Node.js offering task management, reminders, notes, file storage, video downloads, and AI-powered chat.",
     ar: "بوت تيليجرام غني بالميزات مبني باستخدام Node.js يقدم إدارة المهام، التذكيرات، الملاحظات، تخزين الملفات، تحميل الفيديوهات، ودردشة مدعومة بالذكاء الاصطناعي.",
@@ -55,36 +55,7 @@ export const smartBot: Project = {
       "هيكل مشروع نظيف ومنظم",
     ],
   },
-  challenges: {
-    en: [
-      "Designing a robust command parser for Telegram messages",
-      "Managing file storage and media retrieval with Telegram APIs",
-      "Handling real-time reminders and video download queues",
-      "Integrating and formatting responses from Gemini AI",
-    ],
-    ar: [
-      "تصميم محلل أوامر قوي لرسائل تيليجرام",
-      "إدارة تخزين واسترجاع الوسائط باستخدام واجهة Telegram API",
-      "التعامل مع التذكيرات في الوقت الفعلي وقوائم انتظار تحميل الفيديوهات",
-      "دمج واستعراض الردود من ذكاء Gemini AI",
-    ],
-  },
-  solutions: {
-    en: [
-      "Used modular controller and service layers for command handling",
-      "Implemented MongoDB models for persistent task and note management",
-      "Used node-cron for background reminder execution",
-      "Integrated YouTube-dl and FFmpeg for media downloads",
-      "Utilized Google Gemini SDK for conversational prompts",
-    ],
-    ar: [
-      "استخدام هيكلية وحدات للتحكم والخدمات لمعالجة الأوامر",
-      "تنفيذ نماذج MongoDB لإدارة المهام والملاحظات بشكل دائم",
-      "استخدام node-cron لتنفيذ التذكيرات في الخلفية",
-      "دمج YouTube-dl وFFmpeg لتحميل الوسائط",
-      "استخدام SDK الخاص بـ Google Gemini لإنشاء المحادثات",
-    ],
-  },
+
   screenshots: [
     "/projects/smart-bot/preview-1.png",
     "/projects/smart-bot/preview-2.png",

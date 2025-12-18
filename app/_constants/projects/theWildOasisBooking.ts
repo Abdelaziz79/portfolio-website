@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const theWildOasisBooking: Project = {
   id: "the-wild-oasis-booking",
-  title: "🏕️ The Wild Oasis - Booking",
+  title: "The Wild Oasis - Booking",
   description: {
     en: "A customer-facing booking platform for The Wild Oasis hotel, allowing users to view and book cabins, manage their reservations, and update profiles with Google authentication.",
     ar: "منصة حجز للعملاء لفندق The Wild Oasis، تتيح للمستخدمين عرض وحجز الأكواخ وإدارة حجوزاتهم وتحديث ملفاتهم الشخصية باستخدام مصادقة Google.",
@@ -50,34 +50,7 @@ export const theWildOasisBooking: Project = {
       "التكامل مع نظام إدارة الفندق الإداري",
     ],
   },
-  challenges: {
-    en: [
-      "Implementing a comprehensive booking system",
-      "Integrating Google authentication",
-      "Ensuring responsive design across devices",
-      "Managing shared database with admin application",
-    ],
-    ar: [
-      "تنفيذ نظام حجز شامل",
-      "دمج مصادقة Google",
-      "ضمان تصميم متجاوب عبر الأجهزة",
-      "إدارة قاعدة بيانات مشتركة مع تطبيق الإدارة",
-    ],
-  },
-  solutions: {
-    en: [
-      "Utilized Next.js App Router for efficient routing and page management",
-      "Implemented NextAuth.js for secure Google authentication",
-      "Applied Tailwind CSS for responsive and consistent styling",
-      "Integrated Supabase for reliable data management",
-    ],
-    ar: [
-      "استخدام Next.js App Router لتوجيه وإدارة الصفحات بكفاءة",
-      "تنفيذ NextAuth.js للمصادقة الآمنة عبر Google",
-      "تطبيق Tailwind CSS للتنسيق المتجاوب والمتناسق",
-      "دمج Supabase لإدارة البيانات الموثوقة",
-    ],
-  },
+
   screenshots: [
     "/projects/project-3/pr3-1.png",
     "/projects/project-3/pr3-2.png",

@@ -2,7 +2,7 @@ import { Project } from "@/app/_types/types";
 
 export const natours: Project = {
   id: "natours",
-  title: "🌍 Natours",
+  title: "Natours",
   description: {
     en: "A comprehensive tour booking platform built with Node.js, featuring authentication, payment processing, tour management, and interactive maps.",
     ar: "منصة شاملة لحجز الرحلات السياحية مبنية باستخدام Node.js، تتميز بنظام المصادقة، ومعالجة المدفوعات، وإدارة الجولات، والخرائط التفاعلية.",
@@ -58,38 +58,7 @@ export const natours: Project = {
       "تصميم متجاوب لجميع الأجهزة",
     ],
   },
-  challenges: {
-    en: [
-      "Implementing complex role-based access control",
-      "Managing secure payment processing",
-      "Handling file uploads and image processing",
-      "Creating an efficient booking system with restrictions",
-      "Implementing real-time map integration",
-    ],
-    ar: [
-      "تنفيذ نظام معقد للتحكم في الصلاحيات القائم على الأدوار",
-      "إدارة معالجة المدفوعات الآمنة",
-      "معالجة تحميل الملفات ومعالجة الصور",
-      "إنشاء نظام حجز فعال مع قيود",
-      "تنفيذ تكامل الخرائط في الوقت الفعلي",
-    ],
-  },
-  solutions: {
-    en: [
-      "Utilized JWT for secure authentication",
-      "Integrated Stripe API for payment processing",
-      "Implemented Mapbox for interactive maps",
-      "Used MongoDB for efficient data management",
-      "Created comprehensive API documentation",
-    ],
-    ar: [
-      "استخدام JWT للمصادقة الآمنة",
-      "دمج واجهة برمجة تطبيقات Stripe لمعالجة المدفوعات",
-      "تنفيذ Mapbox للخرائط التفاعلية",
-      "استخدام MongoDB لإدارة البيانات بكفاءة",
-      "إنشاء توثيق شامل لواجهة برمجة التطبيقات",
-    ],
-  },
+
   screenshots: [
     "/projects/project-5/pr5-1.png",
     "/projects/project-5/pr5-2.png",
