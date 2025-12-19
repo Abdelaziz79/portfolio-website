@@ -1,11 +1,11 @@
 export const skills = [
   "React",
-  "React Native",
   "Next.js",
   "Node.js",
-  "NestJS",
+  "Nest.js",
   "Express",
   "MongoDB",
+  "React Native",
   "TailwindCSS",
   "shadcn/ui",
   "Git",

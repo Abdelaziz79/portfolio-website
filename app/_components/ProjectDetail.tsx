@@ -35,6 +35,12 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
   );
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("last_visited_project_id", project.id);
+    }
+  }, [project.id]);
+
+  useEffect(() => {
     setVisibleScreenshots(3);
     setImageErrors(project.screenshots?.map(() => false) || []);
     setIsModalOpen(false);
@@ -88,7 +94,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
 
   return (
     <div className="max-w-6xl mx-auto py-12 space-y-8">
-      {/* Image Modal */}
       {project.screenshots && (
         <ImagesModal
           isOpen={isModalOpen}
@@ -104,7 +109,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         />
       )}
 
-      {/* Back Button */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -122,7 +126,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         </Button>
       </motion.div>
 
-      {/* Project Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -130,8 +133,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         className="space-y-6"
       >
         <h1 className="text-4xl font-bold tracking-tight">{project.title}</h1>
-
-        {/* Project Meta */}
         <div className="flex flex-wrap gap-6 text-muted-foreground">
           <div className="flex items-center gap-2">
             <Calendar className="h-5 w-5" />
@@ -143,7 +144,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
           </div>
         </div>
 
-        {/* Action Buttons */}
         <div className="flex flex-wrap gap-4">
           {project.liveUrl && (
             <Button asChild className="gap-2 transition-all hover:scale-105">
@@ -154,7 +154,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             </Button>
           )}
 
-          {/* Handle single GitHub URL */}
           {hasSingleGithub && (
             <Button
               asChild
@@ -168,7 +167,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             </Button>
           )}
 
-          {/* Handle Backend GitHub URL */}
           {hasBackend && (
             <Button
               asChild
@@ -188,7 +186,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             </Button>
           )}
 
-          {/* Handle Frontend GitHub URL */}
           {hasFrontend && (
             <Button
               asChild
@@ -210,7 +207,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         </div>
       </motion.div>
 
-      {/* Main Image */}
       {project.screenshots && project.screenshots.length > 0 && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -248,16 +244,13 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         </motion.div>
       )}
 
-      {/* Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Main Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
           className="lg:col-span-2 space-y-8"
         >
-          {/* Overview */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">{t("overview")}</h2>
             <p className="text-muted-foreground leading-relaxed">
@@ -265,7 +258,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             </p>
           </section>
 
-          {/* Features */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">{t("keyFeatures")}</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -284,7 +276,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             </ul>
           </section>
 
-          {/* Acknowledgment Section */}
           {project.acknowledgment && (
             <Card className="transition-shadow hover:shadow-md">
               <CardContent className="p-6 space-y-4">
@@ -313,14 +304,12 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
           )}
         </motion.div>
 
-        {/* Sidebar */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}
           className="space-y-6"
         >
-          {/* Technologies */}
           <Card className="transition-shadow hover:shadow-md">
             <CardContent className="p-6 space-y-4">
               <h3 className="font-semibold text-lg">{t("technologies")}</h3>
@@ -338,7 +327,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             </CardContent>
           </Card>
 
-          {/* Screenshots */}
           {project.screenshots && project.screenshots.length > 0 && (
             <div className="space-y-4">
               <h3 className="font-semibold text-lg">{t("screenshots")}</h3>
@@ -378,7 +366,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                   ))}
               </div>
 
-              {/* Load More Button */}
               {project.screenshots.length > visibleScreenshots && (
                 <motion.div
                   initial={{ opacity: 0 }}

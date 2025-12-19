@@ -5,12 +5,40 @@ import { useLanguage } from "@/app/_contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Layers } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { projects } from "../_constants/projects";
 
 export default function ProjectsPage() {
   const { t } = useLanguage();
   const [visibleProjects, setVisibleProjects] = useState(6);
+
+  useEffect(() => {
+    const savedId = localStorage.getItem("last_visited_project_id");
+
+    if (savedId) {
+      const projectIndex = projects.findIndex((p) => p.id === savedId);
+
+      if (projectIndex !== -1) {
+        const requiredVisibility = Math.ceil((projectIndex + 1) / 6) * 6;
+
+        if (requiredVisibility > visibleProjects) {
+          setVisibleProjects(requiredVisibility);
+
+          return;
+        }
+
+        const timer = setTimeout(() => {
+          const element = document.getElementById(savedId);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "center" });
+            localStorage.removeItem("last_visited_project_id");
+          }
+        }, 400);
+
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [visibleProjects]);
 
   const loadMoreProjects = () => {
     setVisibleProjects((prev) => Math.min(prev + 6, projects.length));
@@ -20,7 +48,6 @@ export default function ProjectsPage() {
 
   return (
     <div className="max-w-7xl mx-auto py-12 space-y-8">
-      {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -36,14 +63,12 @@ export default function ProjectsPage() {
         </p>
       </motion.div>
 
-      {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.slice(0, visibleProjects).map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
 
-      {/* Load More Button */}
       {hasMoreProjects && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -62,7 +87,6 @@ export default function ProjectsPage() {
         </motion.div>
       )}
 
-      {/* End Message */}
       {!hasMoreProjects && projects.length > 6 && (
         <motion.div
           initial={{ opacity: 0 }}

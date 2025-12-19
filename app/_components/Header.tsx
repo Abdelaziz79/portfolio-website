@@ -16,8 +16,8 @@ import { motion } from "framer-motion";
 import {
   CodeIcon,
   GithubIcon,
-  GlobeIcon,
   HomeIcon,
+  LanguagesIcon,
   LinkedinIcon,
   MailIcon,
   MenuIcon,
@@ -134,7 +134,7 @@ export default function Header() {
                   onClick={toggleLanguage}
                   className="gap-2 transition-transform hover:scale-105"
                 >
-                  <GlobeIcon className="h-4 w-4" />
+                  <LanguagesIcon className="h-4 w-4" />
                   <span
                     className={`font-medium ${
                       isRTL ? "font-latin" : "font-arabic"
@@ -214,7 +214,7 @@ export default function Header() {
                     onClick={toggleLanguage}
                     className="gap-2 cursor-pointer"
                   >
-                    <GlobeIcon className={`h-4 w-4 `} />
+                    <LanguagesIcon className={`h-4 w-4 `} />
                     <span className={`${isRTL ? "font-latin" : "font-arabic"}`}>
                       {language === "en" ? "عربي" : "English"}
                     </span>

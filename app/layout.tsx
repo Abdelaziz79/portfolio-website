@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
 import { Noto_Sans_Arabic, Plus_Jakarta_Sans } from "next/font/google";
 import ShimmerBackground from "./_components/ShimmerBackground";
+import StorageCleaner from "./_components/StorageCleaner";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -22,7 +23,16 @@ const notoArabic = Noto_Sans_Arabic({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-export const metadata = mData;
+export const metadata = {
+  ...mData,
+  icons: {
+    icon: [
+      {
+        url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>",
+      },
+    ],
+  },
+};
 
 export default function RootLayout({
   children,
@@ -41,6 +51,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LanguageProvider>
+            <StorageCleaner />
+
             <div className="flex flex-col min-h-screen">
               <Header />
               <main className="flex-grow">

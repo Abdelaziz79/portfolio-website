@@ -52,6 +52,7 @@ function ProjectCard({ project }: Props) {
 
   return (
     <motion.div
+      id={project.id}
       key={project.id}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -91,7 +92,6 @@ function ProjectCard({ project }: Props) {
           </div>
         </CardContent>
         <CardFooter className="flex flex-col gap-2">
-          {/* First Row: View Details and View Live */}
           <div
             className={`grid ${
               project.liveUrl ? "grid-cols-2" : "grid-cols-1"
@@ -132,7 +132,6 @@ function ProjectCard({ project }: Props) {
             )}
           </div>
 
-          {/* Second Row: GitHub Buttons */}
           {(hasSingleGithub || hasBackend || hasFrontend) && (
             <div
               className={`grid ${
