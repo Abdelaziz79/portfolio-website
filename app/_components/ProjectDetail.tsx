@@ -26,7 +26,7 @@ interface ProjectDetailProps {
 }
 
 export default function ProjectDetail({ project }: ProjectDetailProps) {
-  const { t, language } = useLanguage();
+  const { t, language, isRTL } = useLanguage();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [visibleScreenshots, setVisibleScreenshots] = useState(3);
@@ -233,10 +233,14 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                 onError={() => handleImageError(0)}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute bottom-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-border opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div
+                className={`absolute bottom-4 ${
+                  isRTL ? "left-4" : "right-4"
+                } bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-border opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+              >
                 <p className="text-sm font-medium flex items-center gap-2">
                   <ImageIconLucide className="w-4 h-4" />
-                  Click to view full size
+                  {t("clickToView")}
                 </p>
               </div>
             </>

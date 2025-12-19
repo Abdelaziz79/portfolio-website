@@ -100,4 +100,5 @@ export default {
   messageSent: "تم إرسال الرسالة بنجاح!",
   messageFailed: "فشل في إرسال الرسالة",
   networkError: "خطأ في الشبكة",
+  clickToView: "اضغط لعرض الحجم الكامل",
 } as const;

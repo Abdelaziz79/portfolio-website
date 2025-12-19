@@ -103,4 +103,5 @@ export default {
   messageSent: "Message sent successfully!",
   messageFailed: "Failed to send message",
   networkError: "Network error",
+  clickToView: "Click to view full size",
 } as const;
