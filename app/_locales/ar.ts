@@ -76,9 +76,9 @@ export default {
   // Long descriptions
   // ======================================================
   homeDescription:
-    "مطور Full Stack متخصص في React، Next.js، Node.js، Express، NestJS و MongoDB، أعمل على بناء تطبيقات ويب حديثة وموثوقة.",
+    "مطور Full Stack متخصص في React، Next.js، Node.js، Express، Nest.js و MongoDB، أعمل على بناء تطبيقات ويب حديثة وموثوقة.",
   aboutDescription:
-    "مطور Full Stack متخصص في React، Next.js، Node.js، NestJS، Express و MongoDB، لدي خبرة في تطوير تطبيقات ويب حديثة وبناء أنظمة backend منظمة. أركز على كتابة كود نظيف وتحقيق تكامل جيد بين frontend و backend، مع اهتمام مستمر بالتعلم وتطوير المهارات.",
+    "مطور Full Stack متخصص في React، Next.js، Node.js، Nest.js، Express و MongoDB، لدي خبرة في تطوير تطبيقات ويب حديثة وبناء أنظمة backend منظمة. أركز على كتابة كود نظيف وتحقيق تكامل جيد بين frontend و backend، مع اهتمام مستمر بالتعلم وتطوير المهارات.",
   footerDescription: "بناء تجارب رائعة من خلال البرمجة والتصميم.",
   educationDescription:
     "درست علوم الحاسب مع التركيز على تقنيات الويب ومبادئ هندسة البرمجيات.",

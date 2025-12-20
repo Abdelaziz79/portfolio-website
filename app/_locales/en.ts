@@ -79,9 +79,9 @@ export default {
   projectNotFoundDescription:
     "Sorry, we couldn't find the project you're looking for. It might have been moved or deleted.",
   homeDescription:
-    "Full Stack Developer specializing in React, Next.js, Node.js, Express, NestJS, and MongoDB, building modern and reliable web applications.",
+    "Full Stack Developer specializing in React, Next.js, Node.js, Express, Nest.js, and MongoDB, building modern and reliable web applications.",
   aboutDescription:
-    "Full Stack Developer specializing in React, Next.js, Node.js, NestJS, Express, and MongoDB, with experience building scalable, modern web applications and well-structured backend services. Focused on clean architecture, seamless frontend–backend integration, and continuous learning.",
+    "Full Stack Developer specializing in React, Next.js, Node.js, Nest.js, Express, and MongoDB, with experience building scalable, modern web applications and well-structured backend services. Focused on clean architecture, seamless frontend–backend integration, and continuous learning.",
   footerDescription: "Building great experiences through code and design.",
   educationDescription:
     "Studied Computer Science with focus on web technologies and software engineering principles.",
