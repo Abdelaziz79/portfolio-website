@@ -63,12 +63,18 @@ export default function ImagesModal({
       if (e.key === "Escape") {
         e.preventDefault();
         onClose();
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        api?.scrollPrev();
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        api?.scrollNext();
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
+  }, [isOpen, onClose, api]);
 
   useEffect(() => {
     if (isOpen) {

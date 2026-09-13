@@ -22,7 +22,6 @@ export const alhedab: Project = {
     "React Context",
     "Vercel",
   ],
-  liveUrl: "https://alhedab-portfolio.vercel.app",
   team: {
     en: "Individual Project",
     ar: "مشروع فردي",

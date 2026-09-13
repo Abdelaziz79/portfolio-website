@@ -19,7 +19,6 @@ export const medical: Project = {
     "shadcn/ui",
     "Supabase",
   ],
-  liveUrl: "https://abdalla-zordok.vercel.app",
   features: {
     en: [
       "Medical Case Management with image support and detailed descriptions",

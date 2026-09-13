@@ -34,8 +34,8 @@ export const fullstackEcommerce: Project = {
   ],
   liveUrl: "https://e-commerce-ten-sage-39.vercel.app/",
   githubUrl: {
-    frontend: "https://github.com/Abdelaziz79/e-commerce-backend",
-    backend: "https://github.com/Abdelaziz79/e-commerce-frontend",
+    backend: "https://github.com/Abdelaziz79/e-commerce-backend",
+    frontend: "https://github.com/Abdelaziz79/e-commerce-frontend",
   },
 
   team: {

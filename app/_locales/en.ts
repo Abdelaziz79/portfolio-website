@@ -1,3 +1,5 @@
+// File: portfolio-website/app/_locales/en.ts
+
 export default {
   // ======================================================
   // Single word translations
@@ -38,6 +40,7 @@ export default {
   skills: "Skills & Technologies",
   experience: "Work Experience",
   viewLive: "View Live",
+  googlePlay: "Download from Google Play",
   goBack: "Go Back",
   allRightsReserved: "All rights reserved.",
   viewCode: "View Code",
@@ -79,9 +82,9 @@ export default {
   projectNotFoundDescription:
     "Sorry, we couldn't find the project you're looking for. It might have been moved or deleted.",
   homeDescription:
-    "Full Stack Developer specializing in React, Next.js, Node.js, Express, Nest.js, and MongoDB, building modern and reliable web applications.",
+    "Full Stack Developer specializing in React, React Native, Next.js, Node.js, Express, Nest.js, and MongoDB, building modern and reliable web and mobile applications.",
   aboutDescription:
-    "Full Stack Developer specializing in React, Next.js, Node.js, Nest.js, Express, and MongoDB, with experience building scalable, modern web applications and well-structured backend services. Focused on clean architecture, seamless frontend–backend integration, and continuous learning.",
+    "Full Stack Developer specializing in React, React Native, Next.js, Node.js, Nest.js, Express, and MongoDB, with experience building scalable, modern web and mobile applications and well-structured backend services. Focused on clean architecture, seamless frontend–backend integration, and continuous learning.",
   footerDescription: "Building great experiences through code and design.",
   educationDescription:
     "Studied Computer Science with focus on web technologies and software engineering principles.",

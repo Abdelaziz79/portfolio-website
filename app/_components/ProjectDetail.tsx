@@ -145,14 +145,21 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         </div>
 
         <div className="flex flex-wrap gap-4">
-          {project.liveUrl && (
+          {project.liveUrl && project.liveUrl.includes("play.google.com") ? (
+            <Button asChild className="gap-2.5 transition-all hover:scale-105 bg-black hover:bg-zinc-800 text-white border border-zinc-800 rounded-xl shadow-sm py-6 px-6">
+              <Link href={project.liveUrl} target="_blank">
+                <Image src="/google-play.png" alt="Google Play" width={24} height={24} className="object-contain" />
+                <span className="font-semibold text-lg">{t("googlePlay")}</span>
+              </Link>
+            </Button>
+          ) : project.liveUrl ? (
             <Button asChild className="gap-2 transition-all hover:scale-105">
               <Link href={project.liveUrl} target="_blank">
                 <ExternalLink className="h-4 w-4" />
                 {t("viewLive")}
               </Link>
             </Button>
-          )}
+          ) : null}
 
           {hasSingleGithub && (
             <Button

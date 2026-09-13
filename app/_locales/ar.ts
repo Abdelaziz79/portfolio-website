@@ -1,3 +1,5 @@
+// File: portfolio-website/app/_locales/ar.ts
+
 export default {
   // ======================================================
   // Single word translations
@@ -38,6 +40,7 @@ export default {
   skills: "المهارات والتقنيات",
   experience: "الخبرة العملية",
   viewLive: "عرض مباشر",
+  googlePlay: "تحميل من جوجل بلاي",
   goBack: "رجوع",
   allRightsReserved: "جميع الحقوق محفوظة.",
   viewCode: "عرض الكود",
@@ -76,9 +79,9 @@ export default {
   // Long descriptions
   // ======================================================
   homeDescription:
-    "مطور Full Stack متخصص في React، Next.js، Node.js، Express، Nest.js و MongoDB، أعمل على بناء تطبيقات ويب حديثة وموثوقة.",
+    "مطور Full Stack متخصص في React، React Native، Next.js، Node.js، Express، Nest.js و MongoDB، أعمل على بناء تطبيقات ويب وهواتف محمولة حديثة وموثوقة.",
   aboutDescription:
-    "مطور Full Stack متخصص في React، Next.js، Node.js، Nest.js، Express و MongoDB، لدي خبرة في تطوير تطبيقات ويب حديثة وبناء أنظمة backend منظمة. أركز على كتابة كود نظيف وتحقيق تكامل جيد بين frontend و backend، مع اهتمام مستمر بالتعلم وتطوير المهارات.",
+    "مطور Full Stack متخصص في React، React Native، Next.js، Node.js، Nest.js، Express و MongoDB، لدي خبرة في تطوير تطبيقات ويب وهواتف محمولة حديثة وبناء أنظمة backend منظمة. أركز على كتابة كود نظيف وتحقيق تكامل جيد بين frontend و backend، مع اهتمام مستمر بالتعلم وتطوير المهارات.",
   footerDescription: "بناء تجارب رائعة من خلال البرمجة والتصميم.",
   educationDescription:
     "درست علوم الحاسب مع التركيز على تقنيات الويب ومبادئ هندسة البرمجيات.",

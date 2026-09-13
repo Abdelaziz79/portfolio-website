@@ -21,7 +21,6 @@ export const lunaswiss: Project = {
     "Lucide React",
     "Sonner",
   ],
-  liveUrl: "https://lunaswiss.vercel.app",
   duration: {
     en: "Completed Project",
     ar: "مشروع مكتمل",

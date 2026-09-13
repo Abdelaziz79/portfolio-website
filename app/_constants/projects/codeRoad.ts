@@ -21,7 +21,6 @@ export const codeRoad: Project = {
     "Supabase",
     "LiveCodes",
   ],
-  liveUrl: "https://code-road-seven.vercel.app",
   githubUrl: "https://github.com/Abdelaziz79/codeRoad",
   duration: {
     en: "Completed project",

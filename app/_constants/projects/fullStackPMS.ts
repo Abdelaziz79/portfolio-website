@@ -25,7 +25,6 @@ export const patientManagementSystem: Project = {
     "Google Gemini API",
     "JWT",
   ],
-  liveUrl: "https://patient-card-system.vercel.app/",
   githubUrl: {
     backend: "https://github.com/Abdelaziz79/patient-system-backend",
     frontend: "https://github.com/Abdelaziz79/patient-system-frontend",

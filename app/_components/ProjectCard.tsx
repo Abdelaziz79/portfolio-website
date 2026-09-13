@@ -94,7 +94,11 @@ function ProjectCard({ project }: Props) {
         <CardFooter className="flex flex-col gap-2">
           <div
             className={`grid ${
-              project.liveUrl ? "grid-cols-2" : "grid-cols-1"
+              project.liveUrl && project.liveUrl.includes("play.google.com") 
+                ? "grid-cols-1" 
+                : project.liveUrl 
+                ? "grid-cols-2" 
+                : "grid-cols-1"
             } gap-2 w-full`}
           >
             <Button
@@ -112,7 +116,23 @@ function ProjectCard({ project }: Props) {
                 <span>{t("viewDetails")}</span>
               </Link>
             </Button>
-            {project.liveUrl && (
+            {project.liveUrl && project.liveUrl.includes("play.google.com") ? (
+              <Button
+                asChild
+                size="sm"
+                className="w-full bg-black hover:bg-zinc-800 text-white border border-zinc-800 rounded-lg shadow-sm py-5 transition-all hover:scale-[1.02]"
+                onClick={handleLinkClick}
+              >
+                <Link
+                  href={project.liveUrl}
+                  target="_blank"
+                  className="flex items-center justify-center gap-2.5"
+                >
+                  <Image src="/google-play.png" alt="Google Play" width={20} height={20} className="object-contain" />
+                  <span className="font-semibold">{t("googlePlay")}</span>
+                </Link>
+              </Button>
+            ) : project.liveUrl ? (
               <Button
                 asChild
                 variant="default"
@@ -129,7 +149,7 @@ function ProjectCard({ project }: Props) {
                   <span>{t("viewLive")}</span>
                 </Link>
               </Button>
-            )}
+            ) : null}
           </div>
 
           {(hasSingleGithub || hasBackend || hasFrontend) && (
