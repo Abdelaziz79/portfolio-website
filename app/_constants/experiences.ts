@@ -1,3 +1,5 @@
+// Path: portfolio-website/app/_constants/experiences.ts
+
 // File: portfolio-website/app/_constants/experiences.ts
 
 import { Experience } from "@/app/_types/types";
@@ -7,20 +9,20 @@ export const experiences: Experience[] = [
     id: "1",
     link: "https://play.google.com/store/apps/developer?id=Abdelaziz+Elhadry",
     title: {
-      ar: "مطور تطبيقات هواتف محمولة مستقل",
-      en: "Independent Mobile App Developer",
+      ar: "مطور برمجيات مستقل",
+      en: "Freelance Software Developer",
     },
     company: {
-      ar: "جوجل بلاي (نشر ذاتي)",
-      en: "Google Play (Self-Published)",
+      ar: "عمل حر",
+      en: "Self-Employed",
     },
     period: {
       ar: "فبراير 2026 - الآن",
       en: "February 2026 - Present",
     },
     description: {
-      ar: "قيادة عمليات التصميم والتطوير والإطلاق الناجح لتطبيقات وألعاب متعددة على متجر جوجل بلاي. تشمل محفظة أعمالي 'أثر'، مساحة عمل إنتاجية شاملة مدعومة بالذكاء الاصطناعي؛ و 'LSR 3D'، لعبة ألغاز ليزر تكتيكية معقدة؛ و 'SymmeTree'، لعبة توازن تعتمد على الفيزياء. أدرت دورة حياة المنتج بالكامل من وضع المفاهيم وتصميم واجهة/تجربة المستخدم إلى التنفيذ المتقدم، التوليد الإجرائي للمراحل، والنشر العالمي.",
-      en: "Spearheaded the design, development, and successful launch of multiple mobile applications and games on Google Play. Portfolio includes 'Athar', a comprehensive AI-powered productivity workspace; 'LSR 3D', an intricate tactical laser logic puzzle; and 'SymmeTree', a physics-based balance game. Oversaw the entire product lifecycle from conceptualization and UI/UX design to advanced implementation, procedural generation, and global distribution.",
+      ar: "أعمل بشكل مستقل في تطوير مواقع وتطبيقات ويب وهواتف محمولة للعملاء، بما في ذلك تطبيقات وألعاب منشورة على جوجل بلاي، مع إدارة كامل دورة المشروع من التصميم إلى الإطلاق.",
+      en: "Working independently as a full stack freelancer, building websites, web applications, and mobile apps for clients — including several apps and games published on Google Play — while managing each project end-to-end from design to launch.",
     },
   },
   {
@@ -46,8 +48,8 @@ export const experiences: Experience[] = [
   {
     id: "3",
     title: {
-      ar: "مطور مستقل",
-      en: "Full Stack Freelancer",
+      ar: "مطور Full Stack مستقل",
+      en: "Freelance Full Stack Developer",
     },
     company: {
       ar: "عمل حر",
@@ -58,8 +60,8 @@ export const experiences: Experience[] = [
       en: "July 2024 - July 2025",
     },
     description: {
-      ar: "بناء تطبيقات ويب وتطبيقات هاتفية مخصصة باستخدام MERN, Next.js, و React Native.",
-      en: "Building custom web and mobile applications using MERN, Next.js, and React Native.",
+      ar: "طورت تطبيقات ويب وهواتف محمولة مخصصة للعملاء باستخدام MERN وNext.js وReact Native.",
+      en: "Delivered custom web and mobile applications for clients using the MERN stack, Next.js, and React Native.",
     },
   },
 ];

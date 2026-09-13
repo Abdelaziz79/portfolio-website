@@ -93,10 +93,10 @@ export default function HomePage() {
                   size="sm"
                   className="gap-2 hover:text-primary"
                 >
-                  <Link href="/resume.pdf" target="_blank">
+                  {/*<Link href="/resume.pdf" target="_blank">
                     <Download className="h-4 w-4" />
                     Resume
-                  </Link>
+                  </Link>*/}
                 </Button>
                 <div className="h-4 w-px bg-border" />
                 <Button

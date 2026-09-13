@@ -23,7 +23,7 @@ export default function Footer() {
     { href: "/projects", label: t("projects") },
     { href: "/contact", label: t("contact") },
     { href: "/blog", label: t("blog") },
-    { href: "/resume.pdf", label: "Resume", external: true },
+    // { href: "/resume.pdf", label: "Resume", external: true },
     { href: "/cv.pdf", label: "CV", external: true },
   ];
 
