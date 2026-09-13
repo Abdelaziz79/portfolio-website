@@ -1,3 +1,5 @@
+// File: portfolio-website/app/layout.tsx
+
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import { metadata as mData } from "@/app/_constants/metadata";

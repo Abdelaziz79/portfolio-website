@@ -1,3 +1,5 @@
+// File: portfolio-website/app/projects/[id]/page.tsx
+
 import ProjectDetail from "@/app/_components/ProjectDetail";
 import ProjectNotFound from "@/app/_components/ProjectNotFound";
 import { projects } from "@/app/_constants/projects";

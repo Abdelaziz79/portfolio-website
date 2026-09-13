@@ -1,3 +1,5 @@
+// File: portfolio-website/app/about/page.tsx
+
 "use client";
 
 import Certification from "@/app/_components/Certification";
@@ -41,6 +43,7 @@ export default function AboutPage() {
               fill
               sizes="(max-width: 768px) 16rem, 20rem"
               className="object-cover"
+              priority
             />
           </div>
         </div>
@@ -95,7 +98,12 @@ export default function AboutPage() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {certifications.map((cert) => (
-            <Certification key={cert.id} cert={cert} lang={language} />
+            <Certification
+              key={cert.id}
+              cert={cert}
+              lang={language}
+              priority
+            />
           ))}
         </div>
       </motion.section>

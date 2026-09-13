@@ -1,3 +1,5 @@
+// File: portfolio-website/app/_components/ImageDialog.tsx
+
 "use client";
 
 import {
@@ -15,11 +17,11 @@ interface ImageDialogProps {
   alt: string;
   title?: string;
   description?: string;
-  aspectRatio?: "square" | "auto" | "video";
   width?: number;
   height?: number;
   previewHeight?: string;
   className?: string;
+  priority?: boolean;
 }
 
 export default function ImageDialog({
@@ -27,19 +29,13 @@ export default function ImageDialog({
   alt,
   title,
   description,
-  aspectRatio = "square",
   width = 600,
   height = 400,
   previewHeight = "h-48",
   className = "",
+  priority = false,
 }: ImageDialogProps) {
   const [isOpen, setIsOpen] = useState(false);
-
-  const aspectRatioClasses = {
-    square: "aspect-square",
-    auto: "aspect-auto",
-    video: "aspect-video",
-  };
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -52,24 +48,25 @@ export default function ImageDialog({
             alt={alt}
             width={width}
             height={height}
+            priority={priority}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-4xl w-full">
+      <DialogContent className="max-w-4xl w-full bg-background border-border p-6">
         <DialogTitle className="sr-only">
           {title || `${alt} Preview`}
         </DialogTitle>
         <DialogDescription className="sr-only">
           {description || `Expanded view of ${alt}`}
         </DialogDescription>
-        <div className={`relative w-full ${aspectRatioClasses[aspectRatio]}`}>
+        <div className="relative w-full flex items-center justify-center overflow-hidden rounded-md">
           <Image
             src={image}
             alt={alt}
-            fill
-            className="object-contain"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+            width={1200}
+            height={800}
+            className="w-full h-auto max-h-[80vh] object-contain"
             priority
           />
         </div>

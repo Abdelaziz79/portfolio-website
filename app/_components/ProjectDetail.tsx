@@ -1,3 +1,5 @@
+// File: portfolio-website/app/_components/ProjectDetail.tsx
+
 "use client";
 
 import { useLanguage } from "@/app/_contexts/LanguageContext";
@@ -236,14 +238,15 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                 priority
+                loading="eager"
+                fetchPriority="high"
                 quality={95}
                 onError={() => handleImageError(0)}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div
-                className={`absolute bottom-4 ${
-                  isRTL ? "left-4" : "right-4"
-                } bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-border opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+                className={`absolute bottom-4 ${isRTL ? "left-4" : "right-4"
+                  } bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-border opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
               >
                 <p className="text-sm font-medium flex items-center gap-2">
                   <ImageIconLucide className="w-4 h-4" />

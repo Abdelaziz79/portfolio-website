@@ -1,3 +1,5 @@
+// File: portfolio-website/app/_components/ProjectCard.tsx
+
 "use client";
 
 import { useLanguage } from "@/app/_contexts/LanguageContext";
@@ -68,6 +70,7 @@ function ProjectCard({ project }: Props) {
             alt={project.title}
             width={600}
             height={400}
+            priority
             className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
@@ -93,13 +96,12 @@ function ProjectCard({ project }: Props) {
         </CardContent>
         <CardFooter className="flex flex-col gap-2">
           <div
-            className={`grid ${
-              project.liveUrl && project.liveUrl.includes("play.google.com") 
-                ? "grid-cols-1" 
-                : project.liveUrl 
-                ? "grid-cols-2" 
-                : "grid-cols-1"
-            } gap-2 w-full`}
+            className={`grid ${project.liveUrl && project.liveUrl.includes("play.google.com")
+                ? "grid-cols-1"
+                : project.liveUrl
+                  ? "grid-cols-2"
+                  : "grid-cols-1"
+              } gap-2 w-full`}
           >
             <Button
               asChild
@@ -154,9 +156,8 @@ function ProjectCard({ project }: Props) {
 
           {(hasSingleGithub || hasBackend || hasFrontend) && (
             <div
-              className={`grid ${
-                hasBackend && hasFrontend ? "grid-cols-2" : "grid-cols-1"
-              } gap-2 w-full`}
+              className={`grid ${hasBackend && hasFrontend ? "grid-cols-2" : "grid-cols-1"
+                } gap-2 w-full`}
             >
               {hasSingleGithub && (
                 <Button
