@@ -173,7 +173,7 @@ export default function ContactPage() {
                     if (errors.email) setErrors({ ...errors, email: "" });
                   }}
                   disabled={isLoading}
-                  className={`bg-card ${errors.name ? "border-red-500" : ""}`}
+                  className={`bg-card ${errors.email ? "border-red-500" : ""}`}
                 />
                 {errors.email && (
                   <p className="text-xs text-red-500">{errors.email}</p>
@@ -195,7 +195,7 @@ export default function ContactPage() {
                   if (errors.message) setErrors({ ...errors, message: "" });
                 }}
                 disabled={isLoading}
-                maxLength={1000}
+                maxLength={3000}
                 className={`resize-none bg-card ${
                   errors.message ? "border-red-500" : ""
                 }`}
@@ -204,7 +204,7 @@ export default function ContactPage() {
                 <p className="text-xs text-red-500">{errors.message}</p>
               ) : (
                 <p className="text-xs text-muted-foreground text-right">
-                  {message.length}/1000
+                  {message.length}/3000
                 </p>
               )}
             </div>
